@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>home</title>
+
+   <!-- swiper css link  -->
+   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link href="{{url_for('static',filename='css/style.css')}}" rel="stylesheet" />
+
+</head>
+<body>
+   
+<!-- header section starts  -->
+
+<section class="header">
+
+   <a href="/" class="logo">Dream Destinations</a>
+
+   <nav class="navbar">
+      <a href="/">home</a>
+      <a href="/about">about</a>
+      <a href="/package">package</a>
+      <a href="/book">book</a>
+      <a href="/login">login</a>
+   </nav>
+
+   <div id="menu-btn" class="fas fa-bars"></div>
+
+</section>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home">
+
+   <div class="swiper home-slider">
+
+      <div class="swiper-wrapper">
+
+         <div class="swiper-slide slide" style="background:url('static/images/home-slide-1.jpg') no-repeat">
+            <div class="content">
+               <span>explore, discover, travel</span>
+               <h3>travel arround the world</h3>
+               <a href="/package" class="btn">discover more</a>
+            </div>
+         </div>
+
+         <div class="swiper-slide slide" style="background:url(static/images/home-slide-2.jpg) no-repeat">
+            <div class="content">
+               <span>explore, discover, travel</span>
+               <h3>discover the new places</h3>
+               <a href="/package" class="btn">discover more</a>
+            </div>
+         </div>
+
+         <div class="swiper-slide slide" style="background:url(static/images/home-slide-3.jpg) no-repeat">
+            <div class="content">
+               <span>explore, discover, travel</span>
+               <h3>make your tour worthwhile</h3>
+               <a href="/package" class="btn">discover more</a>
+            </div>
+         </div>
+         
+      </div>
+
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+
+   </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- services section starts  -->
+
+<section class="services">
+
+   <h1 class="heading-title"> our services </h1>
+
+   <div class="box-container">
+
+      <div class="box">
+         <img src="{{url_for('static',filename='images/icon-1.png')}}" alt="">
+         <h3>adventure</h3>
+      </div>
+
+      <div class="box">
+         <img src="{{url_for('static',filename='images/icon-2.png')}}" alt="">
+         <h3>tour guide</h3>
+      </div>
+
+      <div class="box">
+         <img src="{{url_for('static',filename='images/icon-3.png')}}" alt="">
+         <h3>trekking</h3>
+      </div>
+
+      <div class="box">
+         <img src="{{url_for('static',filename='images/icon-4.png')}}" alt="">
+         <h3>camp fire</h3>
+      </div>
+
+      <div class="box">
+         <img src="{{url_for('static',filename='images/icon-5.png')}}" alt="">
+         <h3>off road</h3>
+      </div>
+
+      <div class="box">
+         <img src="{{url_for('static',filename='images/icon-6.png')}}" alt="">
+         <h3>camping</h3>
+      </div>
+
+   </div>
+
+</section>
+
+<!-- services section ends -->
+
+<!-- home about section starts  -->
+
+<section class="home-about">
+
+   <div class="image">
+      <img src="{{url_for('static',filename='images/about.jpg')}}" alt="">
+   </div>
+
+   <div class="content">
+      <h3>about us</h3>
+      <p>Variety Of Tour Packages, Best Deals And Personalised Services.
+
+         Our dedicated travel team diligently works round-the-clock to design the best travel experiences for the customers. The skilled team spends considerable amounts of time ideating tour packages that guarantee to make travelling with us an experience like no other.</p>
+      <a href="/about" class="btn">read more</a>
+   </div>
+
+</section>
+
+<!-- home about section ends -->
+
+<!-- home packages section starts  -->
+
+<section class="home-packages">
+
+   <h1 class="heading-title"> our packages </h1>
+
+   <div class="box-container">
+
+      <div class="box">
+         <div class="image">
+            <img src="{{url_for('static',filename='images/content-project/Weekend tour/OIP.jpg')}}" alt="">
+         </div>
+         <div class="content">
+            <h3>Weekend tours</h3>
+            <p>Heart winning 2 days entertaining trip to hill stations and union territory!</p>
+            <a href="/weekend" class="btn">Explore Now</a>
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="image">
+            <img src="{{url_for('static',filename='images/content-project/Family Vaccation/mysoru.jpg')}}" alt="">
+         </div>
+         <div class="content">
+            <h3>Family Tour</h3>
+            <p>Jweal of South india tour package
+               Incredible South India has a lot to offer to tourist</p>
+            <a href="/Family tour" class="btn">Explore Now</a>
+         </div>
+      </div>
+      
+      <div class="box">
+         <div class="image">
+            <img src="{{url_for('static',filename='images/content-project/Cruise tour/main.jpg')}}" alt="">
+         </div>
+         <div class="content">
+            <h3>Cruise Tour</h3>
+            <p>6 Stunning Days Onboard The Luxury Ponant Ship - L’ Austral Visit Greenland Bay Voyage</p>
+            <a href="/cruise tour" class="btn">Explore Now</a>
+         </div>
+      </div>
+
+   </div>
+
+   <div class="load-more"> <a href="/package" class="btn">load more</a> </div>
+
+</section>
+
+<!-- home packages section ends -->
+
+<!-- home offer section starts  -->
+
+<section class="home-offer">
+   <div class="content">
+      <h3>upto 50% off</h3>
+      <p>Share with your friends who like to experience global travel and create everlasting memories.<br>enjoy 50% offer with your package</p>
+      <a href="/book" class="btn">Book Now</a>
+   </div>
+</section>
+
+<!-- home offer section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Footer -->
+<section class="footer">
+   <div class="box-container">
+     <div class="box">
+       <h3>quick links</h3>
+       <a href="/"> <i class="fas fa-angle-right"></i> home</a>
+       <a href="/about"> <i class="fas fa-angle-right"></i> about</a>
+       <a href="/package"> <i class="fas fa-angle-right"></i> package</a>
+       <a href="/book"> <i class="fas fa-angle-right"></i> book</a>
+       </div>
+     <div class="box">
+         <h3>extra links</h3>
+         <a href="/"> <i class="fas fa-angle-right"></i> Clear doubts</a>
+         <a href="/about"> <i class="fas fa-angle-right"></i> About us</a>
+         <a href="/"> <i class="fas fa-angle-right"></i> Privacy policy</a>
+         <a href=".html"> <i class="fas fa-angle-right"></i> Terms of use</a>
+     </div>
+     <div class="box">
+       <h3>contact info</h3>
+       <a href="#"> <i class="Cheif Consultant"></i> +91 7123452612 </a>
+       <a href="#"> <i class="Customer service"></i> +91 4563728912 </a>
+       <a href="#"> <i class="Meet us in mail"></i> beyonces@gmail.com </a>
+       <a href="#"> <i class="Inperson Meetings"></i> Chennai, india - 600002 </a>
+     </div>
+     <div class="box">
+       <h3>follow us</h3>
+       <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+       <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+       <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+       <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+     </div>
+   </div>
+ </section>
+ <!-- footer section ends -->
+
+
+<!-- swiper js link  -->
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="{{url_for('static',filename='js/script.js')}}"></script>
+
+</body>
+</html>

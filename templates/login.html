@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Dream Destinations</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+ <!-- swiper css link  -->
+ <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+ <!-- font awesome cdn link  -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link rel="stylesheet" href="{{url_for('static',filename='css/login.css')}}">
+<link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+
+
+</head>
+<body>
+   <section class="header">
+
+      <a href="/" class="logo">Dream Destinations</a>
+   
+      <nav class="navbar">
+         <a href="/">home</a>
+         <a href="/about">about</a>
+         <a href="/package">package</a>
+         <a href="/book">book</a>
+         <a href="/login">login</a>
+      </nav>
+   
+      <div id="menu-btn" class="fas fa-bars"></div>
+   
+   </section>
+   <br><br>
+<!-- partial:index.partial.html -->
+<div class="box-form">
+	<div class="left">
+		<div class="overlay">
+		<h1>Explore Now</h1>
+		
+		</div>
+	</div>
+	
+	
+		<div class="right">
+         <br><br>
+		<h5>Login</h5>
+      <br><br>
+    <form  action = "/validatedetails"  method="post">
+		<div class="inputs">
+         <br><br>
+			<input type="text" name="name" placeholder="user name">
+			<input type="password"  name="pas" placeholder="password">
+		</div>
+			
+			<br><br>
+			
+	
+      <br><br>
+      <button type="submit" class="btn">Login</button>
+      </form>
+         <br><br>
+         <br><br>
+         <br><br>
+         <p>Don't have an account? <a href="/signup">Creat Your Account</a> it takes less than a minute</p>
+	</div>
+	
+</div>
+<br><br>
+
+<!-- partial -->
+<!-- Footer -->
+<section class="footer">
+   <div class="box-container">
+     <div class="box">
+       <h3>quick links</h3>
+       <a href="/"> <i class="fas fa-angle-right"></i> home</a>
+       <a href="/about"> <i class="fas fa-angle-right"></i> about</a>
+       <a href="/package"> <i class="fas fa-angle-right"></i> package</a>
+       <a href="/book"> <i class="fas fa-angle-right"></i> book</a>
+       </div>
+     <div class="box">
+         <h3>extra links</h3>
+         <a href="/"> <i class="fas fa-angle-right"></i> Clear doubts</a>
+         <a href="/about"> <i class="fas fa-angle-right"></i> About us</a>
+         <a href="/"> <i class="fas fa-angle-right"></i> Privacy policy</a>
+         <a href=".html"> <i class="fas fa-angle-right"></i> Terms of use</a>
+     </div>
+     <div class="box">
+       <h3>contact info</h3>
+       <a href="#"> <i class="Cheif Consultant"></i> +91 7123452612 </a>
+       <a href="#"> <i class="Customer service"></i> +91 4563728912 </a>
+       <a href="#"> <i class="Meet us in mail"></i> beyonces@gmail.com </a>
+       <a href="#"> <i class="Inperson Meetings"></i> Chennai, india - 600002 </a>
+     </div>
+     <div class="box">
+       <h3>follow us</h3>
+       <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+       <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+       <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+       <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+     </div>
+   </div>
+ </section>
+ <!-- footer section ends -->
+  
+</body>
+</html>

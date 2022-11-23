@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Dream Destinations</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+ <!-- swiper css link  -->
+ <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+ <!-- font awesome cdn link  -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+ <script src="{{url_for('static',filename='js/script.js')}}"></script>
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link rel="stylesheet" href="{{url_for('static',filename='css/login.css')}}">
+<link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+
+<script>  
+  function svalidate(){  
+  var name=document.myform.name.value;  
+  var password=document.myform.pas.value; 
+  var x=document.myform.email.value;  
+  var atposition=x.indexOf("@");  
+  var dotposition=x.lastIndexOf(".");   
+    
+  if (name==null || name==""){  
+    alert("Name can't be blank");  
+    return false;  
+  }
+  else if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){  
+    alert("Please enter a valid e-mail address");  
+    return false;  
+  }  
+
+  else if(password.length<6){  
+    alert("Password must be at least 6 characters long.");  
+    return false;  
+    }  
+    
+  } 
+
+  </script>  
+</head>
+<body>
+   <section class="header">
+
+      <a href="/" class="logo">Dream Destinations</a>
+   
+      <nav class="navbar">
+         <a href="/">home</a>
+         <a href="/about">about</a>
+         <a href="/package">package</a>
+         <a href="/book">book</a>
+         <a href="/login">login</a>
+      </nav>
+   
+      <div id="menu-btn" class="fas fa-bars"></div>
+   
+   </section>
+   <br><br>
+<!-- partial:index.partial.html -->
+<div class="box-form">
+	<div class="left">
+		<div class="overlay">
+		<h1>Explore Now</h1>
+		
+		</div>
+	</div>
+	
+	
+		<div class="right">
+         <br><br>
+		<h5>Signup</h5>
+      <br><br>
+    <form  action = "/savedetails" onsubmit="svalidate();" method="post" name="myform">
+      <div class="inputs">
+         <br><br>
+         <input type="text" id="name" name="name" placeholder="user name">
+         <input type="text" id="email" name="email" placeholder="Email">
+         <input type="password" id="pas" name="pas" placeholder="password">
+      </div>
+    
+			
+			<br><br>
+			
+	
+      <br><br>
+      <button type="submit" class="btn" href="/login">Signup</button> 
+      <!--<button type="submit" class="btn" href="/login">Signup</button>--><!--<a href="/"  type='submit' class="btn">Signup</a>-->
+    </form>
+         <br><br>
+         <br><br>
+         <br><br>
+         <p>Already have an account? <a href="/login">Just Login</a> it takes less than a minute</p>
+	</div>
+	
+</div>
+<br><br>
+
+<!-- partial -->
+<!-- Footer -->
+<section class="footer">
+   <div class="box-container">
+     <div class="box">
+       <h3>quick links</h3>
+       <a href="/"> <i class="fas fa-angle-right"></i> home</a>
+       <a href="/about"> <i class="fas fa-angle-right"></i> about</a>
+       <a href="/package"> <i class="fas fa-angle-right"></i> package</a>
+       <a href="/book"> <i class="fas fa-angle-right"></i> book</a>
+       </div>
+     <div class="box">
+         <h3>extra links</h3>
+         <a href="/"> <i class="fas fa-angle-right"></i> Clear doubts</a>
+         <a href="/about"> <i class="fas fa-angle-right"></i> About us</a>
+         <a href="/"> <i class="fas fa-angle-right"></i> Privacy policy</a>
+         <a href="/"> <i class="fas fa-angle-right"></i> Terms of use</a>
+     </div>
+     <div class="box">
+       <h3>contact info</h3>
+       <a href="#"> <i class="Cheif Consultant"></i> +91 7123452612 </a>
+       <a href="#"> <i class="Customer service"></i> +91 4563728912 </a>
+       <a href="#"> <i class="Meet us in mail"></i> beyonces@gmail.com </a>
+       <a href="#"> <i class="Inperson Meetings"></i> Chennai, india - 600002 </a>
+     </div>
+     <div class="box">
+       <h3>follow us</h3>
+       <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+       <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+       <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+       <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+     </div>
+   </div>
+ </section>
+ <!-- footer section ends -->
+
+
+</body>
+</html>
